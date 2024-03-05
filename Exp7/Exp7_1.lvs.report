@@ -1,0 +1,443 @@
+
+LVS Netlist Compiler - Errors and Warnings for "/home/client136/20EE37002/scale.cdl"
+------------------------------------------------------------------------------------
+
+Warning: *.MEGA at line 12 in file "Exp7_1.src.net" not applied to earlier global-scope .OPTION (or equivalent) statements
+
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         Exp7_1.lvs.report
+LAYOUT NAME:              svdb/Exp7_1.sp ('Exp7_1')
+SOURCE NAME:              /home/client136/20EE37002/scale.cdl Exp7_1.src.net ('Exp7_1')
+RULE FILE:                __LVS.header__
+CREATION TIME:            Sun Mar  3 21:11:39 2024
+CURRENT DIRECTORY:        /home/client136/20EE37002
+USER NAME:                client136
+CALIBRE VERSION:          v2022.1_36.16    Tue Mar 1 14:26:36 PST 2022
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Unbalanced smashed mosfets were matched.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        Exp7_1                        Exp7_1
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD" "vdd" "VCC" "vcc" "VDD!" "vdd!" "VCC!" "vcc!" "AVDD" "DVDD"
+   LVS GROUND NAME                        "GND" "gnd" "VSS" "vss" "GND!" "gnd!" "VSS!" "vss!" "AVSS" "DVSS"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       YES
+   LVS CHECK PORT NAMES                   NO
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS RELAX INITIAL CPOINTS              NONE
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            YES
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            YES
+   SOURCE CASE                            YES
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     2000
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   LVS FILTER UNUSED OPTION               AB RC RE RG
+   LVS REPORT OPTION                      S
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+   LVS EXPAND AMBIGUOUSLY HIGH SHORTED HCELLS NO
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           NO
+   LVS REDUCE PARALLEL CAPACITORS         NO
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  Q(VD)  PARALLEL
+   LVS REDUCE  Q(VD5)  PARALLEL
+   LVS REDUCE  Q(VD10)  PARALLEL
+   LVS REDUCE  Q(VH)  PARALLEL
+   LVS REDUCE  Q(VH5)  PARALLEL
+   LVS REDUCE  Q(VH10)  PARALLEL
+   LVS REDUCE  C(CL)  PARALLEL
+   LVS REDUCE  C(CH)  PARALLEL
+   LVS REDUCE  C(CH3)  PARALLEL
+   LVS REDUCE  C(CL3)  PARALLEL
+   LVS REDUCE  C(CB)  PARALLEL
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mp  w w 3
+   TRACE PROPERTY  mp  l l 3
+   TRACE PROPERTY  mn  w w 3
+   TRACE PROPERTY  mn  l l 3
+   TRACE PROPERTY  c(cl)  w w 3
+   TRACE PROPERTY  c(cl)  l l 3
+   TRACE PROPERTY  c(cl3)  w w 3
+   TRACE PROPERTY  c(cl3)  l l 3
+   TRACE PROPERTY  c(ch)  w w 3
+   TRACE PROPERTY  c(ch)  l l 3
+   TRACE PROPERTY  c(ch3)  w w 3
+   TRACE PROPERTY  c(ch3)  l l 3
+   TRACE PROPERTY  r(rl)  r r 10
+   TRACE PROPERTY  r(rt)  r r 10
+   TRACE PROPERTY  r(ra)  r r 10
+   TRACE PROPERTY  r(rb)  r r 10
+   TRACE PROPERTY  r(rc)  r r 10
+   TRACE PROPERTY  r(rd)  r r 10
+   TRACE PROPERTY  r(re)  r r 10
+   TRACE PROPERTY  r(rg)  r r 10
+   TRACE PROPERTY  r(rh)  r r 10
+   TRACE PROPERTY  r(rw)  r r 10
+   TRACE PROPERTY  r(rf)  r r 10
+   TRACE PROPERTY  r(rk)  r r 10
+   TRACE PROPERTY  r(rm)  r r 10
+   TRACE PROPERTY  r(r1)  r r 10
+   TRACE PROPERTY  r(r2)  r r 10
+   TRACE PROPERTY  r(rb3)  r r 10
+   TRACE PROPERTY  r(ra3)  r r 10
+   TRACE PROPERTY  r(rc3)  r r 10
+   TRACE PROPERTY  r(rd3)  r r 10
+   TRACE PROPERTY  r(re3)  r r 10
+   TRACE PROPERTY  r(rg3)  r r 10
+   TRACE PROPERTY  r(rh3)  r r 10
+   TRACE PROPERTY  r(rw3)  r r 10
+   TRACE PROPERTY  r(rf3)  r r 10
+   TRACE PROPERTY  r(rk3)  r r 10
+   TRACE PROPERTY  r(rm3)  r r 10
+   TRACE PROPERTY  r(r3)  r r 10
+   TRACE PROPERTY  r(rl)  l l 3
+   TRACE PROPERTY  r(rt)  l l 3
+   TRACE PROPERTY  r(ra)  l l 3
+   TRACE PROPERTY  r(rb)  l l 3
+   TRACE PROPERTY  r(rc)  l l 3
+   TRACE PROPERTY  r(rd)  l l 3
+   TRACE PROPERTY  r(re)  l l 3
+   TRACE PROPERTY  r(rg)  l l 3
+   TRACE PROPERTY  r(rh)  l l 3
+   TRACE PROPERTY  r(rw)  l l 3
+   TRACE PROPERTY  r(rf)  l l 3
+   TRACE PROPERTY  r(rk)  l l 3
+   TRACE PROPERTY  r(rm)  l l 3
+   TRACE PROPERTY  r(r1)  l l 3
+   TRACE PROPERTY  r(r2)  l l 3
+   TRACE PROPERTY  r(rb3)  l l 3
+   TRACE PROPERTY  r(ra3)  l l 3
+   TRACE PROPERTY  r(rc3)  l l 3
+   TRACE PROPERTY  r(rd3)  l l 3
+   TRACE PROPERTY  r(re3)  l l 3
+   TRACE PROPERTY  r(rg3)  l l 3
+   TRACE PROPERTY  r(rh3)  l l 3
+   TRACE PROPERTY  r(rw3)  l l 3
+   TRACE PROPERTY  r(rf3)  l l 3
+   TRACE PROPERTY  r(rk3)  l l 3
+   TRACE PROPERTY  r(rm3)  l l 3
+   TRACE PROPERTY  r(r3)  l l 3
+   TRACE PROPERTY  r(rl)  w w 3
+   TRACE PROPERTY  r(rt)  w w 3
+   TRACE PROPERTY  r(ra)  w w 3
+   TRACE PROPERTY  r(rb)  w w 3
+   TRACE PROPERTY  r(rc)  w w 3
+   TRACE PROPERTY  r(rd)  w w 3
+   TRACE PROPERTY  r(re)  w w 3
+   TRACE PROPERTY  r(rg)  w w 3
+   TRACE PROPERTY  r(rh)  w w 3
+   TRACE PROPERTY  r(rw)  w w 3
+   TRACE PROPERTY  r(rf)  w w 3
+   TRACE PROPERTY  r(rk)  w w 3
+   TRACE PROPERTY  r(rm)  w w 3
+   TRACE PROPERTY  r(r1)  w w 3
+   TRACE PROPERTY  r(r2)  w w 3
+   TRACE PROPERTY  r(rb3)  w w 3
+   TRACE PROPERTY  r(ra3)  w w 3
+   TRACE PROPERTY  r(rc3)  w w 3
+   TRACE PROPERTY  r(rd3)  w w 3
+   TRACE PROPERTY  r(re3)  w w 3
+   TRACE PROPERTY  r(rg3)  w w 3
+   TRACE PROPERTY  r(rh3)  w w 3
+   TRACE PROPERTY  r(rw3)  w w 3
+   TRACE PROPERTY  r(rf3)  w w 3
+   TRACE PROPERTY  r(rk3)  w w 3
+   TRACE PROPERTY  r(rm3)  w w 3
+   TRACE PROPERTY  r(r3)  w w 3
+   TRACE PROPERTY  c(cb)  c c 6
+   TRACE PROPERTY  c(cb)  l l 3
+   TRACE PROPERTY  c(cb)  w w 3
+   TRACE PROPERTY  d(ns)  a a 10
+   TRACE PROPERTY  d(dn)  a a 10
+   TRACE PROPERTY  d(n3)  a a 10
+   TRACE PROPERTY  d(ps)  a a 10
+   TRACE PROPERTY  d(dp)  a a 10
+   TRACE PROPERTY  d(p3)  a a 10
+   TRACE PROPERTY  d(ns)  p p 10
+   TRACE PROPERTY  d(dn)  p p 10
+   TRACE PROPERTY  d(n3)  p p 10
+   TRACE PROPERTY  d(ps)  p p 10
+   TRACE PROPERTY  d(dp)  p p 10
+   TRACE PROPERTY  d(p3)  p p 10
+   TRACE PROPERTY  q(vd)  m m 0
+   TRACE PROPERTY  q(vd5)  m m 0
+   TRACE PROPERTY  q(vd10)  m m 0
+   TRACE PROPERTY  q(vh)  m m 0
+   TRACE PROPERTY  q(vh5)  m m 0
+   TRACE PROPERTY  q(vh10)  m m 0
+   TRACE PROPERTY  q(vpnp18_s)  a a 10
+   TRACE PROPERTY  q(vpnp33_s)  a a 10
+   TRACE PROPERTY  q(vnpn18_s)  a a 10
+   TRACE PROPERTY  q(vpnp18_s)  p p 10
+   TRACE PROPERTY  q(vpnp33_s)  p p 10
+   TRACE PROPERTY  q(vnpn18_s)  p p 10
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+  Warning:  Unbalanced smashed mosfets were matched.
+
+LAYOUT CELL NAME:         Exp7_1
+SOURCE CELL NAME:         Exp7_1
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Nets:               7         7
+
+ Instances:         40         6    *    MN (4 pins)
+                    40         6    *    MP (4 pins)
+                ------    ------
+ Total Inst:        80        12
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Nets:               4         4
+
+ Instances:          1         1         _invx4v (4 pins)
+                ------    ------
+ Total Inst:         1         1
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Nets:                4          4            0            0
+
+   Instances:           1          1            0            0    _invx4v
+                  -------    -------    ---------    ---------
+   Total Inst:          1          1            0            0
+
+
+o Statistics:
+
+   78 layout mos transistors were reduced to 6.
+     72 mos transistors were deleted by parallel reduction.
+   6 source mos transistors were reduced to 2.
+     4 mos transistors were deleted by parallel reduction.
+
+
+o Matched Mosfets Which Have Been Unequally Reduced:
+
+       M41(4.420,9.880)                                          MM2
+       M43(5.860,9.880)                                          ** missing smashed mosfet ** 
+       M42(5.140,9.880)                                          ** missing smashed mosfet ** 
+
+       M1(4.420,1.800)                                           MM3
+       M3(5.860,1.800)                                           ** missing smashed mosfet ** 
+       M2(5.140,1.800)                                           ** missing smashed mosfet ** 
+
+       M44(7.860,9.880)                                          MM4
+       M52(13.620,9.880)                                         ** missing smashed mosfet ** 
+       M51(12.900,9.880)                                         ** missing smashed mosfet ** 
+       M50(12.180,9.880)                                         ** missing smashed mosfet ** 
+       M49(11.460,9.880)                                         ** missing smashed mosfet ** 
+       M48(10.740,9.880)                                         ** missing smashed mosfet ** 
+       M47(10.020,9.880)                                         ** missing smashed mosfet ** 
+       M46(9.300,9.880)                                          ** missing smashed mosfet ** 
+       M45(8.580,9.880)                                          ** missing smashed mosfet ** 
+
+       M4(7.860,1.800)                                           MM7
+       M12(13.620,1.800)                                         ** missing smashed mosfet ** 
+       M11(12.900,1.800)                                         ** missing smashed mosfet ** 
+       M10(12.180,1.800)                                         ** missing smashed mosfet ** 
+       M9(11.460,1.800)                                          ** missing smashed mosfet ** 
+       M8(10.740,1.800)                                          ** missing smashed mosfet ** 
+       M7(10.020,1.800)                                          ** missing smashed mosfet ** 
+       M6(9.300,1.800)                                           ** missing smashed mosfet ** 
+       M5(8.580,1.800)                                           ** missing smashed mosfet ** 
+
+       M53(15.620,9.880)                                         MM5
+       M79(36.900,9.880)                                         MM5==3
+       M78(36.180,9.880)                                         MM5==2
+       M77(35.460,9.880)                                         ** missing smashed mosfet ** 
+       M76(34.740,9.880)                                         ** missing smashed mosfet ** 
+       M75(34.020,9.880)                                         ** missing smashed mosfet ** 
+       M74(33.300,9.880)                                         ** missing smashed mosfet ** 
+       M73(32.580,9.880)                                         ** missing smashed mosfet ** 
+       M72(31.860,9.880)                                         ** missing smashed mosfet ** 
+       M71(31.140,9.880)                                         ** missing smashed mosfet ** 
+       M70(29.140,9.880)                                         ** missing smashed mosfet ** 
+       M69(28.420,9.880)                                         ** missing smashed mosfet ** 
+       M68(27.700,9.880)                                         ** missing smashed mosfet ** 
+       M67(26.980,9.880)                                         ** missing smashed mosfet ** 
+       M66(26.260,9.880)                                         ** missing smashed mosfet ** 
+       M65(25.540,9.880)                                         ** missing smashed mosfet ** 
+       M64(24.820,9.880)                                         ** missing smashed mosfet ** 
+       M63(24.100,9.880)                                         ** missing smashed mosfet ** 
+       M62(23.380,9.880)                                         ** missing smashed mosfet ** 
+       M61(21.380,9.880)                                         ** missing smashed mosfet ** 
+       M60(20.660,9.880)                                         ** missing smashed mosfet ** 
+       M59(19.940,9.880)                                         ** missing smashed mosfet ** 
+       M58(19.220,9.880)                                         ** missing smashed mosfet ** 
+       M57(18.500,9.880)                                         ** missing smashed mosfet ** 
+       M56(17.780,9.880)                                         ** missing smashed mosfet ** 
+       M55(17.060,9.880)                                         ** missing smashed mosfet ** 
+       M54(16.340,9.880)                                         ** missing smashed mosfet ** 
+
+       M13(15.620,1.800)                                         MM6
+       M39(36.900,1.800)                                         MM6==3
+       M38(36.180,1.800)                                         MM6==2
+       M37(35.460,1.800)                                         ** missing smashed mosfet ** 
+       M36(34.740,1.800)                                         ** missing smashed mosfet ** 
+       M35(34.020,1.800)                                         ** missing smashed mosfet ** 
+       M34(33.300,1.800)                                         ** missing smashed mosfet ** 
+       M33(32.580,1.800)                                         ** missing smashed mosfet ** 
+       M32(31.860,1.800)                                         ** missing smashed mosfet ** 
+       M31(31.140,1.800)                                         ** missing smashed mosfet ** 
+       M30(29.140,1.800)                                         ** missing smashed mosfet ** 
+       M29(28.420,1.800)                                         ** missing smashed mosfet ** 
+       M28(27.700,1.800)                                         ** missing smashed mosfet ** 
+       M27(26.980,1.800)                                         ** missing smashed mosfet ** 
+       M26(26.260,1.800)                                         ** missing smashed mosfet ** 
+       M25(25.540,1.800)                                         ** missing smashed mosfet ** 
+       M24(24.820,1.800)                                         ** missing smashed mosfet ** 
+       M23(24.100,1.800)                                         ** missing smashed mosfet ** 
+       M22(23.380,1.800)                                         ** missing smashed mosfet ** 
+       M21(21.380,1.800)                                         ** missing smashed mosfet ** 
+       M20(20.660,1.800)                                         ** missing smashed mosfet ** 
+       M19(19.940,1.800)                                         ** missing smashed mosfet ** 
+       M18(19.220,1.800)                                         ** missing smashed mosfet ** 
+       M17(18.500,1.800)                                         ** missing smashed mosfet ** 
+       M16(17.780,1.800)                                         ** missing smashed mosfet ** 
+       M15(17.060,1.800)                                         ** missing smashed mosfet ** 
+       M14(16.340,1.800)                                         ** missing smashed mosfet ** 
+
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec
